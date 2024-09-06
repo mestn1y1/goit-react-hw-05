@@ -11,18 +11,18 @@ export default function HomePage() {
         const data = await getTrendingMovie();
         setTrendingMovies(data.results || []);
       } catch (error) {
-        console.error("Error fetching movies:", error); // Обработка ошибки в блоке catch
+        console.error("Error fetching movies:", error);
       }
     }
     fetchMovies();
-  }, []); // Зависимости, пустой массив означает, что запрос выполнится только при монтировании компонента
+  }, []);
 
   return (
     <div>
       {trendingMovies.length > 0 ? (
         <MovieList trendingMovies={trendingMovies} />
       ) : (
-        <p>No movies found.</p> // Показываем сообщение, если нет фильмов
+        <p>No movies found.</p>
       )}
     </div>
   );
