@@ -46,14 +46,15 @@ export async function getMovieDetail(movieId) {
 }
 
 // Запит на отримання акторського складу
-export async function getMovieCredits(movieId) {
+export async function getMovieCast(movieId) {
   return await axios.get(
     `https://api.themoviedb.org/3/movie/${movieId}/credits`,
     {
       params: { language: "en-US" },
       headers: {
         accept: "application/json",
-        Authorization: "Bearer 50b7cf768f9ef556edbadd7018a0edd7",
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MGI3Y2Y3NjhmOWVmNTU2ZWRiYWRkNzAxOGEwZWRkNyIsIm5iZiI6MTcyNTU2OTA5Ni4zMTI4NzYsInN1YiI6IjY2ZDhiNDc3ZGVlOTJhNWRmMjM5Njg4YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Lt3wNkuOjp47XdMmUAG2ZOfpThNF2ijJvYKAhp8V07I",
       },
     }
   );
@@ -67,7 +68,8 @@ export async function getReviews(movieId) {
       params: { language: "en-US" },
       headers: {
         accept: "application/json",
-        Authorization: `Bearer ${API_KEY}`,
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MGI3Y2Y3NjhmOWVmNTU2ZWRiYWRkNzAxOGEwZWRkNyIsIm5iZiI6MTcyNTU2OTA5Ni4zMTI4NzYsInN1YiI6IjY2ZDhiNDc3ZGVlOTJhNWRmMjM5Njg4YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Lt3wNkuOjp47XdMmUAG2ZOfpThNF2ijJvYKAhp8V07I",
       },
     }
   );
