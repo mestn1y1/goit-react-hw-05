@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const API_KEY = "50b7cf768f9ef556edbadd7018a0edd7";
-
 export async function getTrendingMovie() {
   const response = await axios.get(
     "https://api.themoviedb.org/3/trending/movie/day",
