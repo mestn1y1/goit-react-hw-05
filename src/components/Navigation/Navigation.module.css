@@ -1,7 +1,21 @@
 .link {
   text-decoration: none;
+  color: rgb(138, 135, 135);
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .isActive {
   color: orangered;
+}
+
+.header {
+  border-bottom: 6px solid rgb(138, 135, 135);
+}
+
+.navList {
+  display: flex;
+  gap: 20px;
 }

@@ -9,7 +9,7 @@ export default function HomePage() {
     async function fetchMovies() {
       try {
         const data = await getTrendingMovie();
-        setTrendingMovies(data.results || []);
+        setTrendingMovies(data.results);
       } catch (error) {
         console.error("Error fetching movies:", error);
       }

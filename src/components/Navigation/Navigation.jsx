@@ -8,8 +8,8 @@ const getClassName = (props) => {
 
 export default function Navigation() {
   return (
-    <header>
-      <ul>
+    <header className={css.header}>
+      <ul className={css.navList}>
         <li>
           <NavLink to="/" className={getClassName}>
             Home

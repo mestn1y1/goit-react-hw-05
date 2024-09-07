@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-right: 40px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.listItem {
+  border: 3px solid rgb(138, 135, 135);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: calc((100% - 12 * 16px) / 12);
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+}
+
+.actorImage {
+  width: 100px;
+}
+
+.title {
+  margin-left: 40px;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+}
+
+.descriptionMsg {
+  margin-left: 40px;
+}

@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  gap: 40px;
+  border-bottom: 4px solid rgb(138, 135, 135);
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.img {
+  width: 200px;
+}
+
+.overview {
+  font-weight: 300;
+}
+
+.description {
+  font-weight: bold;
+}
+span {
+  font-weight: normal;
+}
+.movieLink {
+  font-weight: bold;
+  color: orange;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(138, 135, 135);
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.isActive {
+  color: orangered;
+}
+
+.titleDescription {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.list {
+  border-bottom: 2px solid rgb(138, 135, 135);
+  padding-bottom: 20px;
+}
+
+.goBackBtn {
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 4px 10px;
+  background-color: rgb(138, 135, 135);
+  color: white;
+  border: none;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+}

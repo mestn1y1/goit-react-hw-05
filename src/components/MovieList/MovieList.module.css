@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+
+.list {
+  margin-top: 40px;
+}
+
+.title {
+  margin-left: 40px;
+  margin-top: 30px;
+  font-size: 30px;
+  color: rgb(138, 135, 135);
+}
