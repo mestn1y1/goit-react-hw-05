@@ -112,12 +112,12 @@ export default function MovieDetailsPage() {
       <h2 className={css.titleDescription}>Additional information</h2>
       <ul className={css.list}>
         <li>
-          <NavLink to="cast" className={getClassName}>
+          <NavLink to="cast" className={getClassName} state={location.state}>
             Cast
           </NavLink>
         </li>
         <li>
-          <NavLink to="reviews" className={getClassName}>
+          <NavLink to="reviews" className={getClassName} state={location.state}>
             Reviews
           </NavLink>
         </li>
